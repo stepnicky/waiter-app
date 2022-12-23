@@ -1,0 +1,43 @@
+.singleTable {
+    display: flex;
+}
+
+
+.title {
+    flex: 1;
+}
+
+.tableForm {
+    flex: 2;
+    order: -1;
+    margin-top: 50px;
+}
+
+.removeTable {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+    :nth-child(1){
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .tableForm {
+        flex: 3;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .singleTable {
+        flex-direction: column;
+    }
+    .tableForm {
+        order: 1;
+    }
+    .removeTable {
+        order: 2;
+        justify-content: flex-start;
+        margin-left: 30px;
+    }
+}

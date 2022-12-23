@@ -1,3 +1,4 @@
+import AddTable from '../../features/AddTable/AddTable';
 import TableList from '../../features/TableList/TableList';
 
 const Home = () => {
@@ -5,6 +6,7 @@ const Home = () => {
     return (
         <div>
            < TableList />
+           < AddTable />
         </div>
     );
 };

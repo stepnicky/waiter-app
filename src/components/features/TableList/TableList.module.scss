@@ -1,0 +1,62 @@
+.table {
+    display: flex;
+    margin-top: 1px;
+    padding: 10px 0 5px 15px;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.table:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.id {
+    flex: 1;
+}
+
+.status {
+    display: flex;
+    flex: 4;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+    .status {
+        flex: 2;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .status {
+        flex: 1;
+    }
+    
+}
+
+@media only screen and (max-width: 538px) {
+    .buttonWrapper {
+        flex: 1;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .table {
+        flex-direction: column;
+        align-items: center;
+        .status {
+            margin-left: 0;
+        }
+        .buttonWrapper {
+            margin-right: 0;
+        }
+    }
+
+}
