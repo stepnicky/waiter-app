@@ -22,7 +22,6 @@ export const fetchTables = (dispatch) => {
       .then(res => res.json())
       .then(tables => {
         dispatch(updateTables(tables));
-        console.log('updated!');
       });
 };
 

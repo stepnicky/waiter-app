@@ -27,6 +27,13 @@
       "people": 0,
       "maxPeople": 4,
       "bill": 0
+    },
+    {
+      "id": "5",
+      "status": "Free",
+      "people": 0,
+      "maxPeople": 4,
+      "bill": 0
     }
   ]
 }
